@@ -14,6 +14,7 @@ public class enemyAI : MonoBehaviour
     private void Update()
     {
         this.gameObject.transform.Translate(moveDistance, Space.World);
+        this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
     }
     private void OnCollisionEnter(Collision collision)
     {
