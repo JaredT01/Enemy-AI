@@ -8,7 +8,7 @@ public class enemyAI : MonoBehaviour
 
     private void Start()
     {
-        moveDistance = new Vector3(1f, 0f, 0f)*Time.deltaTime;
+        moveDistance = moveDistance*Time.deltaTime;
     }
 
     private void Update()
